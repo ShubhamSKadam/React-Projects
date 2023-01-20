@@ -1,6 +1,7 @@
 # React Fundamentals
 
-![React-logo](https://ionicframework.com/docs/icons/logo-react-icon.png)
+<img src="https://ionicframework.com/docs/icons/logo-react-icon.png" alt="drawing" width="200"/>
+<!-- ![React-logo](https://ionicframework.com/docs/icons/logo-react-icon.png) -->
 
 #### Folder Structure
 
