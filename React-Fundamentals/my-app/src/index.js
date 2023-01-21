@@ -1,20 +1,41 @@
 import React from "react";
-import ReactDOM from "react-dom/client"; // new version syntax in react 18
+import ReactDOM from "react-dom/client";
 
-const Greeting = () => {
+const BookList = () => {
   return (
-    <div>
-      <Person />
-      <Message />
-    </div>
+    <section>
+      <Book></Book>
+      <Book></Book>
+      <Book></Book>
+      <Book></Book>
+    </section>
   );
 };
 
-const Person = () => <h2>My name is Shubham Kadam</h2>;
-const Message = () => {
-  return <p>I love programming</p>;
+const Book = () => {
+  return (
+    <article>
+      <Image />
+      <Title />
+      <Author />
+    </article>
+  );
 };
 
-const root = ReactDOM.createRoot(document.getElementById("root"));
+const Image = () => {
+  return (
+    <img
+      src="https://images-na.ssl-images-amazon.com/images/I/91Szm8FpdfL._AC_UL600_SR600,400_.jpg"
+      alt="Spare"
+    />
+  );
+};
 
-root.render(<Greeting />);
+const Title = () => {
+  return <h2>Spare</h2>;
+};
+
+const Author = () => <h4>Prince Harry The Duke of Sussex</h4>;
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(<BookList />);
